@@ -1,5 +1,5 @@
 # Lyricsyncs
-View synced lyrics (.lrc files) on the browser  
+View synced lyrics (.lrc files) and sing along with the song   
 
 [Live Demo](https://mithu2649.github.io/Lyricsyncs)   
   
