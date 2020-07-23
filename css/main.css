@@ -110,6 +110,9 @@ button:hover {
         grid-gap: 100px;
         height: 100vh;
     }
+    #lyrics-wrapper{
+       height: 150px;
+    }
     #left,
     #right {
         display: grid;
