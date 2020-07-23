@@ -1,0 +1,101 @@
+
+html, body { height: 100%; }
+body {
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F8FFAE;
+    background: -webkit-linear-gradient(-65deg, #43C6AC, #F8FFAE);
+    background: linear-gradient(-65deg, #43C6AC, #F8FFAE);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#main-container{
+    padding:20px;
+    border-radius:10px;
+    max-width: 300px;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+}
+audio{
+    border-radius: 5px !important;
+    background-color:#f1f3f4;
+    border:none;
+    box-shadow: 0px 0px 10px black;
+}
+audio:focus, audio:active{
+    border:none !important;
+    outline: none !important;
+}
+
+button{
+    background-color:black;
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+    padding:10px;
+    margin-top:20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(19, 88, 71)
+}
+
+#lyrics-wrapper{
+    height:150px;
+}
+#song_info{
+    font-family: 'Dosis', sans-serif;
+    white-space: nowrap;
+}
+
+#current_line, #next_line{
+    font-family: 'Dosis', sans-serif;
+    /* font-style: italic; */
+    /* font-family: 'Playfair Display', serif; */
+}
+#current_line{
+    margin-top:40px;
+    margin-bottom:40px;
+    transition: .2s ePlayfair Displayase;
+    font-size:25px;
+}
+#next_line{
+    /* margin-top: 10px !important; */
+    font-weight: bold;
+    color: #2727277e;
+}
+
+/* Desktop adjustments */
+@media only screen and (min-width: 600px) {
+    #main-container{
+        grid-template-columns: 1fr 2fr;
+        width: 100%;
+        max-width: 100%;
+        grid-gap: 100px;
+        height:100vh;
+    }
+    #left, #right{
+        display: grid;
+    }
+    #left{
+        justify-content: right;
+    }
+    #right{
+        justify-content: left;
+        margin-top:-100px;
+    }
+    #song_info{
+        font-size: 20px;
+    }
+    #current_line{
+        font-size: 30px;
+    }
+}
