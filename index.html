@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lyricsyncs</title>
     <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display:ital,wght@1,500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="main-container">
         <div id="left">
+
+            <span id="brand">Lyricsyncs</span>
+
             <div id="audio-wrapper">
                 <audio id="audio" crossorigin preload="none" controls>
                     <source id="audio_source" type="audio/mpeg">
@@ -23,13 +25,12 @@
                 <button id="read_btn">Open lyrics</button>
             </div>
 
-            <input type="file" accept=".mp3, .ogg, .m4a, .aac, .wav" name="audio" id="audio_input"
-                style="display : none">
+            <input type="file" accept=".mp3, .ogg, .m4a, .aac, .wav" name="audio" id="audio_input" style="display : none">
             <input type="file" accept=".lrc" id="lrc_file" style="display : none">
 
         </div>
         <div id="right">
-            <p id="song_info"></p>
+            <p id="song_info">I am ready to play for you...</p>
 
             <div id="lyrics-wrapper">
                 <h2 id="current_line">Lyrics will be displayed here</h2>
